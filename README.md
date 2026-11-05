@@ -7,7 +7,7 @@ This is my full SOC analyst learning path. It will include notes, small write-up
 
 
 ## Topics covered so far
-- [Subnetting](notes/subnetting) (IPv4, CIDR, /24-/30)
+- [Subnetting](/notes/subnetting) (IPv4, CIDR, /24-/30)
 
 
 ## My Profiles
