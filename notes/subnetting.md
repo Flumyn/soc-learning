@@ -93,3 +93,16 @@ Special cases: /31 is used to connect 2 devices (without address of the network 
 - Hosts: 6
 - ipcalc check:
 <img width="820" height="259" alt="image" src="https://github.com/user-attachments/assets/cecf5c67-8412-47c8-a53b-dbb29f369af2" />
+
+### 6. `172.20.9.64/30`
+- Host bits: 2
+- Block size: 4
+- Borders: 0, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 76, 80, ...
+- Network: `172.20.9.64/30`
+- Broadcast: `172.20.9.67`
+- HostMin: `172.20.9.65`
+- HostMax: `172.20.9.66`
+- Hosts: 2
+- ! It can't be assigned to a host, bc this is an IP address of network
+- ipcalc check:
+<img width="820" height="259" alt="image" src="https://github.com/user-attachments/assets/9abfcc07-a1a9-4947-be00-424bef42149b" />
