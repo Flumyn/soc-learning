@@ -69,3 +69,27 @@ Special cases: /31 is used to connect 2 devices (without address of the network 
 - Hosts: 30
 - ipcalc check:
 <img width="820" height="259" alt="image" src="https://github.com/user-attachments/assets/3d225d81-592d-43e9-bb2f-8f79a0f75578" />
+
+### 4. `192.168.200.83/28`
+- Host bits: 4
+- Block size: 16
+- Borders: 0, 16, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240, 256
+- Network: `192.168.200.80/28`
+- Broadcast: `192.168.200.95`
+- HostMin: `192.168.200.81`
+- HostMax: `192.168.200.94`
+- Hosts: 14
+- ipcalc check:
+<img width="820" height="259" alt="image" src="https://github.com/user-attachments/assets/f4333050-297d-40d2-8d33-91ad91206217" />
+
+### 5. `10.0.5.22/29`
+- Host bits: 3
+- Block size: 8
+- Borders: 0, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128, 136, 144, ...
+- Network: `10.0.5.16/29`
+- Broadcast: `10.0.5.23`
+- HostMin: `10.0.5.17`
+- HostMax: `10.0.5.22`
+- Hosts: 6
+- ipcalc check:
+<img width="820" height="259" alt="image" src="https://github.com/user-attachments/assets/cecf5c67-8412-47c8-a53b-dbb29f369af2" />
