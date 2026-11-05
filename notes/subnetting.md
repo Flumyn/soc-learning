@@ -29,8 +29,8 @@ Special cases: /31 is used to connect 2 devices (without address of the network 
 - The addresses `10.x.x.x/8` are private
 - The addresses `172.16.0.0/12` (`172.16.x.x` - `172.31.x.x`) are private
 - The addresses `192.168.x.x/16` are private
-- `127.x.x.x/8` is loopback address
-- `169.254.x.x/16` is self-assigned fallback IPs (when host failed to get IP from DHCP)
+- `127.x.x.x/8` are loopback IPs
+- `169.254.x.x/16` are self-assigned fallback IPs (when host failed to get IP from DHCP)
 - Most other addresses are public (a few reserved ranges exist, e.g. 100.64.0.0/10 and 224.0.0.0/4)
 
 ## Worked examples
