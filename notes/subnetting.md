@@ -27,8 +27,21 @@ Special cases: /31 is used to connect 2 devices (without address of the network 
 
 ## How to determine if an IP address is public, private or special
 - The addresses `10.x.x.x/8` are private
-- The addresses in the range `172.16.x.x/12` - `172.31.x.x/12` are private
+- The addresses `172.16.0.0/12` (`172.16.x.x` - `172.31.x.x`) are private
 - The addresses `192.168.x.x/16` are private
 - `127.x.x.x/8` is loopback address
-- `169.254.x.x/16` is self-assigned fallback IP (when host failed to get IP from DHCP)
+- `169.254.x.x/16` is self-assigned fallback IPs (when host failed to get IP from DHCP)
 - Most other addresses are public (a few reserved ranges exist, e.g. 100.64.0.0/10 and 224.0.0.0/4)
+
+## Worked examples
+### 1. `172.16.33.200/25`
+- Host bits: 7
+- Block size: 128
+- Borders: 0, 128, 256
+- Network: `172.16.33.128/25`
+- Broadcast: `172.16.33.255`
+- HostMin: `172.16.33.129`
+- HostMax: `172.16.33.254`
+- Hosts: 126
+- ipcalc check:
+<img width="768" height="255" alt="image" src="https://github.com/user-attachments/assets/01f7bdcc-6459-4caa-b4c6-035e92a82e5f" />
