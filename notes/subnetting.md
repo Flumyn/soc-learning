@@ -45,3 +45,27 @@ Special cases: /31 is used to connect 2 devices (without address of the network 
 - Hosts: 126
 - ipcalc check:
 <img width="768" height="255" alt="image" src="https://github.com/user-attachments/assets/01f7bdcc-6459-4caa-b4c6-035e92a82e5f" />
+
+### 2. `192.168.45.99/26`
+- Host bits: 6
+- Block size: 64
+- Borders: 0, 64, 128, 192, 256
+- Network: `192.168.45.64/26`
+- Broadcast: `192.168.45.127`
+- HostMin: `192.168.45.65`
+- HostMax: `192.168.45.126`
+- Hosts: 62
+- ipcalc check:
+<img width="820" height="259" alt="image" src="https://github.com/user-attachments/assets/18e58936-0c5d-4b6a-b16f-1ea97b2b2dda" />
+
+### 3. `10.50.8.140/27`
+- Host bits: 5
+- Block size: 32
+- Borders: 0, 32, 64, 96, 128, 160, 192, 224, 256
+- Network: `10.50.8.128/27`
+- Broadcast: `10.50.8.159`
+- HostMin: `10.50.8.129`
+- HostMax: `10.50.8.158`
+- Hosts: 30
+- ipcalc check:
+<img width="820" height="259" alt="image" src="https://github.com/user-attachments/assets/3d225d81-592d-43e9-bb2f-8f79a0f75578" />
