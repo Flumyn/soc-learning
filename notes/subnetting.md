@@ -11,7 +11,7 @@
 8. HostMax = broadcast - 1
 9. Hosts = block size - 2
 
-## Block sizes
+## Block sizes (/24-/30)
 
 | Prefix | Netmask | Block size | Subnets in /24 | Hosts |
 |---|---|---|---|---|
@@ -106,3 +106,27 @@ Special cases: /31 is used to connect 2 devices (without address of the network 
 - ! It can't be assigned to a host, bc this is an IP address of network
 - ipcalc check:
 <img width="820" height="259" alt="image" src="https://github.com/user-attachments/assets/9abfcc07-a1a9-4947-be00-424bef42149b" />
+
+## Method for /16-/23
+1. Block size is in the 3rd octet: 2 to the power of (24 - prefix)
+2. Netmask = 255.255.(256 - block size).0
+3. Block borders are also in the 3rd octet
+4. Network = first two octets, left border, `.0`
+5. Broadcast = first two octets, next border - 1, `.255`
+6. HostMin = network + 1 (last octet `.1`)
+7. HostMax = broadcast - 1 (last octet `.254`)
+8. Hosts = block size * 256 - 2
+
+Everything else is similar to /24-/30
+
+## Block sizes (/16-/23)
+| Prefix | Netmask | Block size (3rd octet) | Hosts |
+|---|---|---|---|
+| /16 | 255.255.0.0 | 256 (whole octet) | 65534 |
+| /17 | 255.255.128.0 | 128 | 32766 |
+| /18 | 255.255.192.0 | 64 | 16382 |
+| /19 | 255.255.224.0 | 32 | 8190 |
+| /20 | 255.255.240.0 | 16 | 4094 |
+| /21 | 255.255.248.0 | 8 | 2046 |
+| /22 | 255.255.252.0 | 4 | 1022 |
+| /23 | 255.255.254.0 | 2 | 510 |
