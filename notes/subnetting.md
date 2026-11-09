@@ -33,7 +33,7 @@ Special cases: /31 is used to connect 2 devices (without address of the network 
 - `169.254.x.x/16` are self-assigned fallback IPs (when host failed to get IP from DHCP)
 - Most other addresses are public (a few reserved ranges exist, e.g. 100.64.0.0/10 and 224.0.0.0/4)
 
-## Worked examples
+## Worked examples (/24/-30)
 ### 1. `172.16.33.200/25`
 - Host bits: 7
 - Block size: 128
@@ -131,7 +131,7 @@ Everything else is similar to /24-/30
 | /22 | 255.255.252.0 | 4 | 1022 |
 | /23 | 255.255.254.0 | 2 | 510 |
 
-## Worked examples
+## Worked examples (/16-/23)
 ### 1. `10.77.150.20/22`
 - Host bits: 10
 - Block size: 4
@@ -159,7 +159,7 @@ Everything else is similar to /24-/30
 ### 3. `192.168.77.10/23`
 - Host bits: 9
 - Block size: 2
-- Borders: 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 46, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78
+- Borders: 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78
 - Network: 192.168.76.0/23
 - Broadcast: 192.168.77.255
 - HostMin: 192.168.76.1
