@@ -132,17 +132,6 @@ Everything else is similar to /24-/30
 | /23 | 255.255.254.0 | 2 | 510 |
 
 ## Worked examples
-### 1. ``
-- Host bits:
-- Block size:
-- Borders:
-- Network:
-- Broadcast:
-- HostMin:
-- HostMax:
-- Hosts:
-- ipcalc check:
-
 ### 1. `10.77.150.20/22`
 - Host bits: 10
 - Block size: 4
@@ -166,3 +155,27 @@ Everything else is similar to /24-/30
 - Hosts: 4094
 - ipcalc check:
 <img width="775" height="275" alt="image" src="https://github.com/user-attachments/assets/3c662ad3-ea68-45fa-8be7-8fce1315b17b" />
+
+### 3. `192.168.77.10/23`
+- Host bits: 9
+- Block size: 2
+- Borders: 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 46, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78
+- Network: 192.168.76.0/23
+- Broadcast: 192.168.77.255
+- HostMin: 192.168.76.1
+- HostMax: 192.168.77.254
+- Hosts: 510
+- ipcalc check:
+<img width="775" height="275" alt="image" src="https://github.com/user-attachments/assets/56037cc4-2ab5-4353-b469-8ed4533ad79e" />
+
+### 4. `10.200.130.5/17`
+- Host bits: 15
+- Block size: 128
+- Borders: 0, 128, 256
+- Network: 10.200.128.0/17
+- Broadcast: 10.200.255.255
+- HostMin: 10.200.128.1
+- HostMax: 10.200.255.254
+- Hosts: 32766
+- ipcalc check:
+<img width="775" height="275" alt="image" src="https://github.com/user-attachments/assets/e91ce445-5729-499c-a49a-cc0c75c84fcd" />
