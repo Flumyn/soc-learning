@@ -130,3 +130,39 @@ Everything else is similar to /24-/30
 | /21 | 255.255.248.0 | 8 | 2046 |
 | /22 | 255.255.252.0 | 4 | 1022 |
 | /23 | 255.255.254.0 | 2 | 510 |
+
+## Worked examples
+### 1. ``
+- Host bits:
+- Block size:
+- Borders:
+- Network:
+- Broadcast:
+- HostMin:
+- HostMax:
+- Hosts:
+- ipcalc check:
+
+### 1. `10.77.150.20/22`
+- Host bits: 10
+- Block size: 4
+- Borders: 0, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 76, 80, 84, 88, 92, 96, 100, 104, 108, 112, 116, 120, 124, 128, 132, 136, 140, 144, 148, 152, 156, 160
+- Network: 10.77.148.0/22
+- Broadcast: 10.77.151.255
+- HostMin: 10.77.148.1
+- HostMax: 10.77.151.254
+- Hosts: 1022
+- ipcalc check:
+<img width="775" height="275" alt="image" src="https://github.com/user-attachments/assets/0b8ffb8e-9538-41b2-b40d-dbf0fde514e1" />
+
+### 2. `172.18.200.45/20`
+- Host bits: 12
+- Block size: 16
+- Borders: 0, 16, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208
+- Network: 172.18.192.0/20
+- Broadcast: 172.18.207.255
+- HostMin: 172.18.192.1
+- HostMax: 172.18.207.254
+- Hosts: 4094
+- ipcalc check:
+<img width="775" height="275" alt="image" src="https://github.com/user-attachments/assets/3c662ad3-ea68-45fa-8be7-8fce1315b17b" />
