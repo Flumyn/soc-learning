@@ -24,7 +24,9 @@ In this lab I want to see how ARP requests work using Wireshark
  <img width="1000" height="359" alt="image" src="https://github.com/user-attachments/assets/3e167963-4217-4a6b-b467-e6ad0827a7c5" />
  <img width="1000" height="359" alt="image" src="https://github.com/user-attachments/assets/161e5459-192e-442f-9e3b-f9af65c54b39" />
 
-
 4. We can see the MAC address of the gateway that appeared in the ARP table on my host
  <img width="649" height="117" alt="image" src="https://github.com/user-attachments/assets/7337e6bc-c076-4fe1-8ae0-31248230104c" />
 
+## What I saw
+When I pinged the gateway (`192.168.10.1`), my host (`192.168.10.123`) sent the ARP request (Who has `192.168.10.1`? Tell `192.168.10.123`) to the broadcast (`ff:ff:ff:ff:ff:ff`) to determine the MAC address of the gateway. The gateway answered my host: `192.168.10.1` is at `b4:xx:xx:xx:xx:xx`, and my host added that MAC address to the ARP table to not sent the ARP request again.
+### Requests without a reply
