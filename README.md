@@ -8,6 +8,7 @@ This is my full SOC analyst learning path. It will include notes, small write-up
 
 ## Topics covered so far
 - [Subnetting](notes/subnetting.md) (IPv4, CIDR, /16-/30)
+- [ARP requests in Wireshark](labs/arp-wireshark.md)
 
 
 ## My Profiles
